@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai2.css">
+</head>
+<body>
+    <h2>Danh sách khóa học</h2>
+
+    <div class="filters">
+      <input type="text" id="contentFilter" placeholder="Nội dung">
+      <input type="date" id="dateFilter">
+      <select id="statusFilter">
+        <option value="">-- Trạng thái --</option>
+        <option value="Pending">Pending</option>
+        <option value="Done">Done</option>
+      </select>
+      <input type="text" id="userFilter" placeholder="Người phụ trách">
+      <button onclick="applyFilters()">SUBMIT</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nội dung</th>
+          <th>Hạn</th>
+          <th>Trạng thái</th>
+          <th>Phụ trách</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="taskTableBody">
+      </tbody>
+    </table>
+  </div>
+    <script src="bai2.js"></script>
+</body>
+</html>
